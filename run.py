@@ -42,3 +42,14 @@ def main():
         print("""Use these navigation codes to navigate: \n "nu"- add new user \n "lg"-login to your created account \n "ex"-to exit the system""")
         nav_code = input().lower()
         print('\n')
+
+        if nav_code == 'nu':
+            print('-----------create username---------')
+            auth_name = input()
+
+            print('-----------create password---------')
+            auth_pass = input()
+
+            print('-----------confirm password---------')
+            confirm_password = input()
+            print('\n')
