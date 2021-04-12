@@ -53,3 +53,23 @@ def main():
             print('-----------confirm password---------')
             confirm_password = input()
             print('\n')
+
+            while confirm_password != auth_pass:
+                print("-----------Invalid Password !-----------")
+                print("-----------Enter user name-----------")
+                auth_pass = input()
+                print("-----------Confirm your password-----------")
+                confirm_password = input()
+                print('\n')
+                
+            else:
+                print(
+                    f"Hello {auth_name}! You have successfully create your account! "
+                )
+                print('\n')
+                print("                 ---------------- Proceed to login ----------------")
+                print('\n')
+                print("-----------Username-----------")
+                loggin_name = input()
+                print("-----------Your password-----------")
+                loggin_pass = input()
