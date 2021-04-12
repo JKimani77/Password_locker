@@ -30,3 +30,15 @@ def look_existing_credential(account):
 
 def display_credentials():
     return Creds.reveal_credentials()
+
+
+def main():
+    print('\n')
+    while True:
+        print(
+            "***********  Welcome to password locker!!! ************"
+        )
+        print('\n')
+        print("""Use these navigation codes to navigate: \n "nu"- add new user \n "lg"-login to your created account \n "ex"-to exit the system""")
+        nav_code = input().lower()
+        print('\n')
