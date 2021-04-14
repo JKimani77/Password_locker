@@ -182,3 +182,15 @@ def main():
                         else:
                             print("----------------invalid option ----------------")
                             continue
+
+                elif nav_two == '5':
+                    print(
+                        "All your credentials will be deleted. \n Are you sure? y/n")
+                    logout = input().lower()
+
+                    if logout == 'y':
+                        print("-------- You have logged out successfully --------")
+                        print('\n')
+                        break
+                    elif logout == 'n':
+                        continue
