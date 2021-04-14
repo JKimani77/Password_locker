@@ -73,3 +73,30 @@ def main():
                 loggin_name = input()
                 print("-----------Your password-----------")
                 loggin_pass = input()
+
+                
+            while loggin_name != auth_name or loggin_pass != auth_pass:
+                print('\n')
+                print("Invalid username or password")
+                print("-----------Username-----------")
+                loggin_name = input()
+                print("-----------Your password-----------")
+                loggin_pass = input()
+                print('\n')
+
+            else:
+                print('\n')
+                print(
+                    f"---------------- Welcome {loggin_name} to your account----------------")
+                print('\n')
+
+                print("Select an option to continue: \n Enter 1, 2, 3, 4 or 5")
+                print('\n')
+
+            while True:
+                print("1:view your saved credentials")
+                print("2:Add new credentials")
+                print("3:Remove  credentials")
+                print("4:search new credentials")
+                print("5:log out")
+                nav_two = input()
