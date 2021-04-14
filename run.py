@@ -137,7 +137,7 @@ def main():
                                     f" Password: {social_password} ")
                                 print('\n')
 
-                                else:
+                            else:
                                 print(" ----------------Enter a valid code ----------------")
                                 save_creds(create_new_creds(social_name, social_password))
 
@@ -152,3 +152,33 @@ def main():
 
                             if retn == 'n':
                                 break
+
+                elif nav_two == '1':
+                    while True:
+                        print("                 ----------------This is a list of your credentials----------------")
+
+                        if display_credentials():
+
+                            for i in display_credentials():
+                                print(
+                                    f"***** Account Name:{i.social_name} *****")
+                                print(
+                                    f"***** Password:{i.social_password}***** ")
+
+                        else:
+
+                            print('\n')
+                            print("Nothing here yet")
+                            print('\n')
+
+                        print("Back to menu? y/n")
+
+                        retn = input().lower()
+
+                        if retn == 'y':
+                            break
+                        elif retn == 'n':
+                            continue
+                        else:
+                            print("----------------invalid option ----------------")
+                            continue
