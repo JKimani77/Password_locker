@@ -136,3 +136,19 @@ def main():
                                 print(
                                     f" Password: {social_password} ")
                                 print('\n')
+
+                                else:
+                                print(" ----------------Enter a valid code ----------------")
+                                save_creds(create_new_creds(social_name, social_password))
+
+                            #elif save_new_credential(create_new_credential(social_name, social_password))
+
+                        elif choice == 'cp':
+                            break
+                        else:
+                            print("use 'y' for yes and 'n' for no")
+
+                            retn = input().lower()
+
+                            if retn == 'n':
+                                break
