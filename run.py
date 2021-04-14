@@ -194,3 +194,27 @@ def main():
                         break
                     elif logout == 'n':
                         continue
+
+                elif nav_two == '3':
+                    while True:
+                        print("---- search for credential to delete ----")
+
+                        searchh = input()
+
+                        #if look_existing_credentials(searchh):
+                        search_cre = locate_credential(searchh)
+                        print(
+                            f"Account Name: {search_cre.account}\n Password: 345O6")
+                        print("Delete? y/n")
+
+                        confirm = input().lower()
+                        if confirm == 'y':
+                            del_creds(search_cre)
+                            print("----- Account successfully removed -----")
+                            break
+                        elif confirm == 'n':
+                            continue
+
+                    else:
+                        print("----- Account does not exist -----")
+                        break
