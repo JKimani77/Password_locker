@@ -218,3 +218,54 @@ def main():
                     else:
                         print("----- Account does not exist -----")
                         break
+
+                elif nav_two == '4':
+                    while True:
+                        print("continue? y/n")
+                        choice = input().lower()
+                        if choice == 'y':
+                            print("--- Enter account name to find credentials ---")
+
+                            search_name = input()
+
+                            # if check_existing_credentials(search_name):
+                            search_cre = locate_credential(
+                                search_name)
+                            print(
+                                f"Account Name: {search_cre.account_name}\n Password: {search_cre.account_password}")
+                            # else:
+                            print("---Sorry this account does not exist -----")
+
+                        elif choice == 'n':
+                            break
+                        else:
+                            print("----- Invalid code -----")
+
+                    print("----- Invalid code -----")
+                    continue
+
+                elif nav_code == 'ex':
+                    break
+            else:
+                print("Enter valid code to continue")
+
+        elif nav_code == 'lg':
+            print("rgetberdgsge")
+            print("grebfdgfxgvwebtg hrf")
+            default_user_name = input()
+
+            print("easrdgthnyrhfgfetd-")
+            default_user_name = input()
+            print('\n')
+
+        while default_user_name != 'guest1' :
+             print(
+                 "opihnlvsk")
+             print("defwghtdjgfu")
+             default_user_name = input()
+
+
+
+
+if __name__ == '__main__':
+    main()
