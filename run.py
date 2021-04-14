@@ -100,3 +100,39 @@ def main():
                 print("4:search new credentials")
                 print("5:log out")
                 nav_two = input()
+
+                if nav_two == '2':
+                    while True:
+                        print("Do you wish to continue? Y/N ")
+
+                        choice = input().lower()
+                        if choice == 'n':
+                            break
+                        if choice == 'y':
+                            print("-----------Enter account name-----------")
+                            social_name = input()
+                            print('\n')
+                            print(
+                                " rp. generate random password \n** cp. Create your own password")
+                            keyword = input().lower()
+
+                            # from random module we use randint method
+                            if keyword == 'rp':
+                                social_password = random.randint(
+                                    11111, 111111)
+                                print('\n')
+                                print('Automatically generated this for you')
+                                print(
+                                    f"  Account: {social_name}  ")
+                                print(
+                                    f"  Password: {social_password}  ")
+                                print('\n')
+
+                            elif keyword == 'cp':
+                                print("Create your own password password")
+                                social_password = input()
+                                print(
+                                    f" Account: {social_name} ")
+                                print(
+                                    f" Password: {social_password} ")
+                                print('\n')
